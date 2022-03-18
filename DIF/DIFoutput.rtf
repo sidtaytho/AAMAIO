@@ -1,0 +1,639 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 > library(psych)\
+> library(ltm)\
+> library(difR)\
+> library(eRm)\
+> data("Abortion")\
+> st <- Abortion\
+> st\
+    Item 1 Item 2 Item 3 Item 4\
+1        1      1      1      1\
+2        1      1      1      1\
+3        1      1      1      1\
+4        1      1      1      1\
+5        1      1      1      1\
+6        1      1      1      1\
+7        1      1      1      1\
+8        1      1      1      1\
+9        1      1      1      1\
+10       1      1      1      1\
+11       1      1      1      1\
+12       1      1      1      1\
+13       1      1      1      1\
+14       1      1      1      1\
+15       1      1      1      1\
+16       1      1      1      1\
+17       1      1      1      1\
+18       1      1      1      1\
+19       1      1      1      1\
+20       1      1      1      1\
+21       1      1      1      1\
+22       1      1      1      1\
+23       1      1      1      1\
+24       1      1      1      1\
+25       1      1      1      1\
+26       1      1      1      1\
+27       1      1      1      1\
+28       1      1      1      1\
+29       1      1      1      1\
+30       1      1      1      1\
+31       1      1      1      1\
+32       1      1      1      1\
+33       1      1      1      1\
+34       1      1      1      1\
+35       1      1      1      1\
+36       1      1      1      1\
+37       1      1      1      1\
+38       1      1      1      1\
+39       1      1      1      1\
+40       1      1      1      1\
+41       1      1      1      1\
+42       1      1      1      1\
+43       1      1      1      1\
+44       1      1      1      1\
+45       1      1      1      1\
+46       1      1      1      1\
+47       1      1      1      1\
+48       1      1      1      1\
+49       1      1      1      1\
+50       1      1      1      1\
+51       1      1      1      1\
+52       1      1      1      1\
+53       1      1      1      1\
+54       1      1      1      1\
+55       1      1      1      1\
+56       1      1      1      1\
+57       1      1      1      1\
+58       1      1      1      1\
+59       1      1      1      1\
+60       1      1      1      1\
+61       1      1      1      1\
+62       1      1      1      1\
+63       1      1      1      1\
+64       1      1      1      1\
+65       1      1      1      1\
+66       1      1      1      1\
+67       1      1      1      1\
+68       1      1      1      1\
+69       1      1      1      1\
+70       1      1      1      1\
+71       1      1      1      1\
+72       1      1      1      1\
+73       1      1      1      1\
+74       1      1      1      1\
+75       1      1      1      1\
+76       1      1      1      1\
+77       1      1      1      1\
+78       1      1      1      1\
+79       1      1      1      1\
+80       1      1      1      1\
+81       1      1      1      1\
+82       1      1      1      1\
+83       1      1      1      1\
+84       1      1      1      1\
+85       1      1      1      1\
+86       1      1      1      1\
+87       1      1      1      1\
+88       1      1      1      1\
+89       1      1      1      1\
+90       1      1      1      1\
+91       1      1      1      1\
+92       1      1      1      1\
+93       1      1      1      1\
+94       1      1      1      1\
+95       1      1      1      1\
+96       1      1      1      1\
+97       1      1      1      1\
+98       1      1      1      1\
+99       1      1      1      1\
+100      1      1      1      1\
+101      1      1      1      1\
+102      1      1      1      1\
+103      1      1      1      1\
+104      1      1      1      1\
+105      1      1      1      1\
+106      1      1      1      1\
+107      1      1      1      1\
+108      1      1      1      1\
+109      1      1      1      1\
+110      1      1      1      1\
+111      1      1      1      1\
+112      1      1      1      1\
+113      1      1      1      1\
+114      1      1      1      1\
+115      1      1      1      1\
+116      1      1      1      1\
+117      1      1      1      1\
+118      1      1      1      1\
+119      1      1      1      1\
+120      1      1      1      1\
+121      1      1      1      1\
+122      1      1      1      1\
+123      1      1      1      1\
+124      1      1      1      1\
+125      1      1      1      1\
+126      1      1      1      1\
+127      1      1      1      1\
+128      1      1      1      1\
+129      1      1      1      1\
+130      1      1      1      1\
+131      1      1      1      1\
+132      1      1      1      1\
+133      1      1      1      1\
+134      1      1      1      1\
+135      1      1      1      1\
+136      1      1      1      1\
+137      1      1      1      1\
+138      1      1      1      1\
+139      1      1      1      1\
+140      1      1      1      1\
+141      1      1      1      1\
+142      0      0      0      0\
+143      0      0      0      0\
+144      0      0      0      0\
+145      0      0      0      0\
+146      0      0      0      0\
+147      0      0      0      0\
+148      0      0      0      0\
+149      0      0      0      0\
+150      0      0      0      0\
+151      0      0      0      0\
+152      0      0      0      0\
+153      0      0      0      0\
+154      0      0      0      0\
+155      0      0      0      0\
+156      0      0      0      0\
+157      0      0      0      0\
+158      0      0      0      0\
+159      0      0      0      0\
+160      0      0      0      0\
+161      0      0      0      0\
+162      0      0      0      0\
+163      0      0      0      0\
+164      0      0      0      0\
+165      0      0      0      0\
+166      0      0      0      0\
+167      0      0      0      0\
+168      0      0      0      0\
+169      0      0      0      0\
+170      0      0      0      0\
+171      0      0      0      0\
+172      0      0      0      0\
+173      0      0      0      0\
+174      0      0      0      0\
+175      0      0      0      0\
+176      0      0      0      0\
+177      0      0      0      0\
+178      0      0      0      0\
+179      0      0      0      0\
+180      0      0      0      0\
+181      0      0      0      0\
+182      0      0      0      0\
+183      0      0      0      0\
+184      0      0      0      0\
+185      0      0      0      0\
+186      0      0      0      0\
+187      0      0      0      0\
+188      0      0      0      0\
+189      0      0      0      0\
+190      0      0      0      0\
+191      0      0      0      0\
+192      0      0      0      0\
+193      0      0      0      0\
+194      0      0      0      0\
+195      0      0      0      0\
+196      0      0      0      0\
+197      0      0      0      0\
+198      0      0      0      0\
+199      0      0      0      0\
+200      0      0      0      0\
+201      0      0      0      0\
+202      0      0      0      0\
+203      0      0      0      0\
+204      0      0      0      0\
+205      0      0      0      0\
+206      0      0      0      0\
+207      0      0      0      0\
+208      0      0      0      0\
+209      0      0      0      0\
+210      0      0      0      0\
+211      0      0      0      0\
+212      0      0      0      0\
+213      0      0      0      0\
+214      0      0      0      0\
+215      0      0      0      0\
+216      0      0      0      0\
+217      0      0      0      0\
+218      0      0      0      0\
+219      0      0      0      0\
+220      0      0      0      0\
+221      0      0      0      0\
+222      0      0      0      0\
+223      0      0      0      0\
+224      0      0      0      0\
+225      0      0      0      0\
+226      0      0      0      0\
+227      0      0      0      0\
+228      0      0      0      0\
+229      0      0      0      0\
+230      0      0      0      0\
+231      0      0      0      0\
+232      0      0      0      0\
+233      0      0      0      0\
+234      0      0      0      0\
+235      0      0      0      0\
+236      0      0      0      0\
+237      0      0      0      0\
+238      0      0      0      0\
+239      0      0      0      0\
+240      0      0      0      0\
+241      0      0      0      0\
+242      0      0      0      0\
+243      0      0      0      0\
+244      0      0      0      0\
+245      0      1      1      1\
+246      0      1      1      1\
+247      0      1      1      1\
+248      0      1      1      1\
+249      0      1      1      1\
+250      0      1      1      1\
+ [ reached 'max' / getOption("max.print") -- omitted 129 rows ]\
+> ##need a group column for the DIF - lets do gender\
+> set.seed(123)\
+> gen <- sample(1:2, 379, replace = TRUE)\
+> gen #1 = female; 2 = male\
+  [1] 1 1 1 2 1 2 2 2 1 1 2 2 2 1 2 1 2 1 1 1 1 2 1 1 1 1 2 2 1 2 1 2 1 2 2 1 1 1 1 2 1 2 2 1 1 1 1 2 1 1 2 1 1 1 1 2 2 1 2 1 1 2 2 1 1\
+ [66] 2 1 1 1 1 2 1 1 1 1 2 2 1 2 2 2 2 1 2 2 2 1 1 2 1 2 2 1 2 2 1 1 2 1 1 1 2 2 1 2 2 1 1 1 2 2 2 2 1 1 2 2 2 1 2 1 2 1 1 1 2 2 1 1 1\
+[131] 2 1 2 2 2 2 2 2 2 1 2 2 2 1 2 2 2 1 2 2 1 2 1 2 1 1 1 1 1 1 1 2 2 2 1 2 1 1 2 1 2 2 2 2 1 1 1 2 2 2 2 1 1 1 1 2 2 1 1 2 2 1 1 2 2\
+[196] 1 1 2 1 2 2 2 2 1 2 2 2 1 2 2 2 1 1 2 2 2 2 1 2 1 2 1 1 1 2 2 1 1 2 1 1 2 2 1 2 2 2 2 2 1 1 2 1 2 1 1 1 2 2 2 1 2 2 1 1 1 1 1 2 1\
+[261] 2 2 2 1 2 1 2 1 1 1 1 1 1 2 1 2 1 1 1 1 2 2 1 1 1 2 2 2 1 2 1 1 1 1 1 2 2 2 1 1 2 2 1 2 1 1 2 1 1 1 2 1 2 1 2 2 2 2 1 1 1 2 1 1 2\
+[326] 1 1 2 1 2 2 2 1 1 1 1 2 1 1 1 1 2 2 1 2 1 1 1 2 1 1 1 2 1 1 2 1 1 1 2 2 1 1 1 2 1 2 1 2 1 1 1 2 2 1 1 2 1 1\
+> st$gen <- gen #add it to my st dataset\
+> st\
+    Item 1 Item 2 Item 3 Item 4 gen\
+1        1      1      1      1   1\
+2        1      1      1      1   1\
+3        1      1      1      1   1\
+4        1      1      1      1   2\
+5        1      1      1      1   1\
+6        1      1      1      1   2\
+7        1      1      1      1   2\
+8        1      1      1      1   2\
+9        1      1      1      1   1\
+10       1      1      1      1   1\
+11       1      1      1      1   2\
+12       1      1      1      1   2\
+13       1      1      1      1   2\
+14       1      1      1      1   1\
+15       1      1      1      1   2\
+16       1      1      1      1   1\
+17       1      1      1      1   2\
+18       1      1      1      1   1\
+19       1      1      1      1   1\
+20       1      1      1      1   1\
+21       1      1      1      1   1\
+22       1      1      1      1   2\
+23       1      1      1      1   1\
+24       1      1      1      1   1\
+25       1      1      1      1   1\
+26       1      1      1      1   1\
+27       1      1      1      1   2\
+28       1      1      1      1   2\
+29       1      1      1      1   1\
+30       1      1      1      1   2\
+31       1      1      1      1   1\
+32       1      1      1      1   2\
+33       1      1      1      1   1\
+34       1      1      1      1   2\
+35       1      1      1      1   2\
+36       1      1      1      1   1\
+37       1      1      1      1   1\
+38       1      1      1      1   1\
+39       1      1      1      1   1\
+40       1      1      1      1   2\
+41       1      1      1      1   1\
+42       1      1      1      1   2\
+43       1      1      1      1   2\
+44       1      1      1      1   1\
+45       1      1      1      1   1\
+46       1      1      1      1   1\
+47       1      1      1      1   1\
+48       1      1      1      1   2\
+49       1      1      1      1   1\
+50       1      1      1      1   1\
+51       1      1      1      1   2\
+52       1      1      1      1   1\
+53       1      1      1      1   1\
+54       1      1      1      1   1\
+55       1      1      1      1   1\
+56       1      1      1      1   2\
+57       1      1      1      1   2\
+58       1      1      1      1   1\
+59       1      1      1      1   2\
+60       1      1      1      1   1\
+61       1      1      1      1   1\
+62       1      1      1      1   2\
+63       1      1      1      1   2\
+64       1      1      1      1   1\
+65       1      1      1      1   1\
+66       1      1      1      1   2\
+67       1      1      1      1   1\
+68       1      1      1      1   1\
+69       1      1      1      1   1\
+70       1      1      1      1   1\
+71       1      1      1      1   2\
+72       1      1      1      1   1\
+73       1      1      1      1   1\
+74       1      1      1      1   1\
+75       1      1      1      1   1\
+76       1      1      1      1   2\
+77       1      1      1      1   2\
+78       1      1      1      1   1\
+79       1      1      1      1   2\
+80       1      1      1      1   2\
+81       1      1      1      1   2\
+82       1      1      1      1   2\
+83       1      1      1      1   1\
+84       1      1      1      1   2\
+85       1      1      1      1   2\
+86       1      1      1      1   2\
+87       1      1      1      1   1\
+88       1      1      1      1   1\
+89       1      1      1      1   2\
+90       1      1      1      1   1\
+91       1      1      1      1   2\
+92       1      1      1      1   2\
+93       1      1      1      1   1\
+94       1      1      1      1   2\
+95       1      1      1      1   2\
+96       1      1      1      1   1\
+97       1      1      1      1   1\
+98       1      1      1      1   2\
+99       1      1      1      1   1\
+100      1      1      1      1   1\
+101      1      1      1      1   1\
+102      1      1      1      1   2\
+103      1      1      1      1   2\
+104      1      1      1      1   1\
+105      1      1      1      1   2\
+106      1      1      1      1   2\
+107      1      1      1      1   1\
+108      1      1      1      1   1\
+109      1      1      1      1   1\
+110      1      1      1      1   2\
+111      1      1      1      1   2\
+112      1      1      1      1   2\
+113      1      1      1      1   2\
+114      1      1      1      1   1\
+115      1      1      1      1   1\
+116      1      1      1      1   2\
+117      1      1      1      1   2\
+118      1      1      1      1   2\
+119      1      1      1      1   1\
+120      1      1      1      1   2\
+121      1      1      1      1   1\
+122      1      1      1      1   2\
+123      1      1      1      1   1\
+124      1      1      1      1   1\
+125      1      1      1      1   1\
+126      1      1      1      1   2\
+127      1      1      1      1   2\
+128      1      1      1      1   1\
+129      1      1      1      1   1\
+130      1      1      1      1   1\
+131      1      1      1      1   2\
+132      1      1      1      1   1\
+133      1      1      1      1   2\
+134      1      1      1      1   2\
+135      1      1      1      1   2\
+136      1      1      1      1   2\
+137      1      1      1      1   2\
+138      1      1      1      1   2\
+139      1      1      1      1   2\
+140      1      1      1      1   1\
+141      1      1      1      1   2\
+142      0      0      0      0   2\
+143      0      0      0      0   2\
+144      0      0      0      0   1\
+145      0      0      0      0   2\
+146      0      0      0      0   2\
+147      0      0      0      0   2\
+148      0      0      0      0   1\
+149      0      0      0      0   2\
+150      0      0      0      0   2\
+151      0      0      0      0   1\
+152      0      0      0      0   2\
+153      0      0      0      0   1\
+154      0      0      0      0   2\
+155      0      0      0      0   1\
+156      0      0      0      0   1\
+157      0      0      0      0   1\
+158      0      0      0      0   1\
+159      0      0      0      0   1\
+160      0      0      0      0   1\
+161      0      0      0      0   1\
+162      0      0      0      0   2\
+163      0      0      0      0   2\
+164      0      0      0      0   2\
+165      0      0      0      0   1\
+166      0      0      0      0   2\
+167      0      0      0      0   1\
+168      0      0      0      0   1\
+169      0      0      0      0   2\
+170      0      0      0      0   1\
+171      0      0      0      0   2\
+172      0      0      0      0   2\
+173      0      0      0      0   2\
+174      0      0      0      0   2\
+175      0      0      0      0   1\
+176      0      0      0      0   1\
+177      0      0      0      0   1\
+178      0      0      0      0   2\
+179      0      0      0      0   2\
+180      0      0      0      0   2\
+181      0      0      0      0   2\
+182      0      0      0      0   1\
+183      0      0      0      0   1\
+184      0      0      0      0   1\
+185      0      0      0      0   1\
+186      0      0      0      0   2\
+187      0      0      0      0   2\
+188      0      0      0      0   1\
+189      0      0      0      0   1\
+190      0      0      0      0   2\
+191      0      0      0      0   2\
+192      0      0      0      0   1\
+193      0      0      0      0   1\
+194      0      0      0      0   2\
+195      0      0      0      0   2\
+196      0      0      0      0   1\
+197      0      0      0      0   1\
+198      0      0      0      0   2\
+199      0      0      0      0   1\
+200      0      0      0      0   2\
+ [ reached 'max' / getOption("max.print") -- omitted 179 rows ]\
+> #1PL/Rasch model\
+> rm <- rasch(st[1:4]) ##conditional maximum likelihood estimation of item parameters\
+> summary(rm)\
+\
+Call:\
+rasch(data = st[1:4])\
+\
+Model Summary:\
+   log.Lik      AIC      BIC\
+ -708.5504 1427.101 1446.789\
+\
+Coefficients:\
+                value std.err  z.vals\
+Dffclt.Item 1  0.1636  0.0605  2.7040\
+Dffclt.Item 2 -0.2366  0.0589 -4.0143\
+Dffclt.Item 3 -0.3581  0.0617 -5.8069\
+Dffclt.Item 4 -0.3039  0.0607 -5.0096\
+Dscrmn         4.4571  0.3902 11.4217\
+\
+Integration:\
+method: Gauss-Hermite\
+quadrature points: 21 \
+\
+Optimization:\
+Convergence: 0 \
+max(|grad|): 9.4e-05 \
+quasi-Newton: BFGS \
+\
+\
+> #Plot Rasch Model\
+> plot(rm,type=c("ICC")) ##ICC\
+> plot(rm,type=c("IIC")) ##IIC\
+> plot(rm,type=c("IIC"), items=0) ##IIC\
+> rm <- rasch(st) \
+> #testing for unidimensionality\
+> test <- unidimTest(rasch(st[1:4]))\
+> test\
+\
+Unidimensionality Check using Modified Parallel Analysis\
+\
+Call:\
+rasch(data = st[1:4])\
+\
+Matrix of tertachoric correlations\
+       Item 1 Item 2 Item 3 Item 4\
+Item 1 1.0000 0.9017 0.8658 0.7684\
+Item 2 0.9017 1.0000 0.8823 0.8210\
+Item 3 0.8658 0.8823 1.0000 0.9034\
+Item 4 0.7684 0.8210 0.9034 1.0000\
+\
+Alternative hypothesis: the second eigenvalue of the observed data is substantially larger \
+			than the second eigenvalue of data under the assumed IRT model\
+\
+Second eigenvalue in the observed data: 0.1625\
+Average of second eigenvalues in Monte Carlo samples: 0.1147\
+Monte Carlo samples: 100\
+p-value: 0.1386\
+\
+> plot(test, type = "b", pch = 1:2)\
+> legend("topright", c("Real Data", "Average Simulated Data"), lty = 1, \
++        pch = 1:2, col = 1:2, bty = "n")\
+> #DIF - difLord\
+> dif <- difLord(st, group = gen, focal.name = 1, model = "1PL", purify = TRUE)\
+> dif\
+\
+Detection of Differential Item Functioning using Lord's method \
+with 1PL model and with item purification\
+\
+Engine 'ltm' for item parameter estimation \
+ \
+Common discrimination parameter: fixed to 1\
+\
+Convergence reached after 1 iteration\
+\
+No set of anchor items was provided \
+ \
+No p-value adjustment for multiple comparisons \
+ \
+Lord's chi-square statistic: \
+ \
+       Stat.  P-value  \
+Item 1 6.0563 0.0139  *\
+Item 2 2.2644 0.1324   \
+Item 3 0.8203 0.3651   \
+Item 4 3.5351 0.0601  .\
+gen    0.0005 0.9824   \
+\
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1  \
+ \
+Detection threshold: 3.8415 (significance level: 0.05)\
+\
+Items detected as DIF items: \
+       \
+ Item 1\
+\
+Effect size (ETS Delta scale): \
+ \
+Effect size code: \
+ 'A': negligible effect \
+ 'B': moderate effect \
+ 'C': large effect \
+ \
+       mF-mR   deltaLord  \
+Item 1  0.5086 -1.1952   B\
+Item 2  0.2655 -0.6239   A\
+Item 3  0.1132 -0.2660   A\
+Item 4  0.3673 -0.8632   A\
+gen    -1.2546  2.9483   C\
+\
+Effect size codes: 0 'A' 1.0 'B' 1.5 'C' \
+ (for absolute values of 'deltaLord') \
+ \
+Output was not captured! \
+> #plotting the results\
+> plot(dif)\
+The plot was not captured!\
+> #look at some other methods of detecting DIF\
+> dichoDif(st, group = gen, focal.name = 1, model = "1PL", purify = TRUE, method = c("Lord","Raju","MH"))\
+Comparison of DIF detection results using 3 methods \
+ \
+Methods used: \
+ Lord's chi-square test\
+ Raju's area\
+ Mantel-Haenszel\
+\
+Matching variable: test score \
+ \
+No set of anchor items was provided \
+ \
+Parameters: \
+ Significance level: 0.05\
+ Mantel-Haenszel DIF statistic: Chi-square statistic \
+ Mantel-Haenszel continuity correction: Yes \
+ Type of Mantel-Haenszel test: asymptotic test \
+ Item response model: 1PL \
+ Engine 'ltm' for item parameter estimation \
+ Common discrimination parameter: fixed to 1\
+ Type of Raju's Z statistic: unsigned area \
+ Item purification: Yes \
+ \
+ Item purification results: \
+ \
+            Lord Raju M-H\
+Convergence  Yes  Yes Yes\
+Iterations    1    1   1 \
+\
+ No p-value adjustment for multiple comparisons \
+ \
+Comparison of DIF detection results: \
+ \
+       Lord  Raju  M-H   #DIF \
+Item 1  DIF   DIF   DIF   3/3 \
+Item 2 NoDIF NoDIF  DIF   1/3 \
+Item 3 NoDIF NoDIF  DIF   1/3 \
+Item 4 NoDIF NoDIF  DIF   1/3 \
+gen    NoDIF NoDIF  DIF   1/3 \
+\
+ Output was not captured! \
+> }

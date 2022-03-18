@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 > library(catR)\
+> # Item bank generation with 100 items, 2PL model\
+> bank <- genDichoMatrix(items = 100, model = "2PL", seed = 1)\
+> bank\
+            a            b c d\
+1   0.8759267 -0.626453811 0 1\
+2   1.0084232  0.183643324 0 1\
+3   0.8178157 -0.835628612 0 1\
+4   1.0316058  1.595280802 0 1\
+5   0.8690831  0.329507772 0 1\
+6   1.3534575 -0.820468384 0 1\
+7   1.1433415  0.487429052 0 1\
+8   1.1820348  0.738324705 0 1\
+9   1.0768371  0.575781352 0 1\
+10  1.3364352 -0.305388387 0 1\
+11  0.8728527  1.511781168 0 1\
+12  0.9076711  0.389843236 0 1\
+13  1.2864564 -0.621240581 0 1\
+14  0.8698607 -2.214699887 0 1\
+15  0.9585239  1.124930918 0 1\
+16  0.9214384 -0.044933609 0 1\
+17  0.9360014 -0.016190263 0 1\
+18  0.9441773  0.943836211 0 1\
+19  1.0988377  0.821221195 0 1\
+20  0.9645339  0.593901321 0 1\
+21  0.8988085  0.918977372 0 1\
+22  1.2686078  0.782136301 0 1\
+23  0.9570841  0.074564983 0 1\
+24  0.9640887 -1.989351696 0 1\
+25  0.9799619  0.619825748 0 1\
+26  1.1425333 -0.056128740 0 1\
+27  0.9852871 -0.155795507 0 1\
+28  0.9924732 -1.470752384 0 1\
+29  0.8636679 -0.478150055 0 1\
+30  0.9351459  0.417941560 0 1\
+31  1.0120321  1.358679552 0 1\
+32  0.8822211 -0.102787727 0 1\
+33  1.1062992  0.387671612 0 1\
+34  0.6963212 -0.053805041 0 1\
+35  1.0613116 -1.377059557 0 1\
+36  0.6927100 -0.414994563 0 1\
+37  0.9398048 -0.394289954 0 1\
+38  0.8943440 -0.059313397 0 1\
+39  0.8695810  1.100025372 0 1\
+40  0.9886206  0.763175748 0 1\
+41  0.6171281 -0.164523596 0 1\
+42  1.2353167 -0.253361680 0 1\
+43  0.6670055  0.696963375 0 1\
+44  0.9072939  0.556663199 0 1\
+45  0.7768160 -0.688755695 0 1\
+46  0.8498362 -0.707495157 0 1\
+47  1.4174333  0.364581962 0 1\
+48  1.0034791  0.768532925 0 1\
+49  0.7427399 -0.112346212 0 1\
+50  0.6718789  0.881107726 0 1\
+51  1.0900374  0.398105880 0 1\
+52  0.9962880 -0.612026393 0 1\
+53  0.9363863  0.341119691 0 1\
+54  0.8141276 -1.129363096 0 1\
+55  0.7025079  1.433023702 0 1\
+56  0.7849615  1.980399899 0 1\
+57  1.2000058 -0.367221476 0 1\
+58  0.8757467 -1.044134626 0 1\
+59  0.7231146  0.569719627 0 1\
+60  1.3738581 -0.135054604 0 1\
+61  1.0850201  2.401617761 0 1\
+62  0.9522706 -0.039240003 0 1\
+63  1.2116966  0.689739362 0 1\
+64  1.1772845  0.028002159 0 1\
+65  0.8761514 -0.743273209 0 1\
+66  1.4412205  0.188792300 0 1\
+67  0.9489946 -1.804958629 0 1\
+68  0.7151011  1.465554862 0 1\
+69  0.9711201  0.153253338 0 1\
+70  1.0415077  2.172611670 0 1\
+71  1.4615957  0.475509529 0 1\
+72  1.0211605 -0.709946431 0 1\
+73  1.0913998  0.610726353 0 1\
+74  0.9845694 -0.934097632 0 1\
+75  0.9331998 -1.253633400 0 1\
+76  0.9930548  0.291446236 0 1\
+77  1.1575279 -0.443291873 0 1\
+78  1.4150490  0.001105352 0 1\
+79  1.2054785  0.074341324 0 1\
+80  1.2415817 -0.589520946 0 1\
+81  0.7537353 -0.568668733 0 1\
+82  1.1967791 -0.135178615 0 1\
+83  1.0439850  1.178086997 0 1\
+84  0.7065500 -1.523566800 0 1\
+85  1.1042045  0.593946188 0 1\
+86  0.9682491  0.332950371 0 1\
+87  1.2929175  1.063099837 0 1\
+88  0.8467836 -0.304183924 0 1\
+89  0.9139576  0.370018810 0 1\
+90  0.8147781  0.267098791 0 1\
+91  0.9645792 -0.542520031 0 1\
+92  1.0804024  1.207867806 0 1\
+93  0.8536504  1.160402616 0 1\
+94  1.1660746  0.700213650 0 1\
+95  0.7583834  1.586833455 0 1\
+96  0.7904031  0.558486426 0 1\
+97  1.2882315 -1.276592208 0 1\
+98  0.7968305 -0.573265414 0 1\
+99  1.0823949 -1.224612615 0 1\
+100 0.9237848 -0.473400636 0 1\
+> # Creating a starting list: 1 item with theta value of 0\
+> start <- list(theta = 0)\
+> # Creation of 'test' list: weighted likelihood estimation of provisional ability, \
+> # and MFI criterion for next item selection\
+> test <- list(method = "WL", itemSelect = "MFI")\
+> # Creation of a stopping rule: classification criterion, ability level for classifying = 2; sig level = .05\
+> stop <- list(rule = "classification", thr = 2, alpha =0.05)\
+> # CAT test\
+> res <- randomCAT(2, bank, start = start, test = test, stop = stop)\
+> res\
+Random generation of a CAT response pattern \
+  without fixing the random seed \
+ \
+ Item bank calibrated under Two-Parameter Logistic model \
+ \
+ True ability level: 2 \
+ \
+No pre-specified minimum CAT length \
+ \
+ Starting parameters: \
+   Number of early items: 1 \
+   Early item selection: maximum informative item for starting ability \
+    Early items not chosen to control for content balancing \
+   Starting ability: 0 \
+\
+ Adaptive test parameters: \
+   Next item selection method: maximum Fisher information \
+   Provisional ability estimator: Weighted likelihood estimator \
+   Ability estimation adjustment for constant pattern: none \
+   Type of standard error: asymptotic SE (ASE) \
+   Type of ASE formula: classic formula \
+\
+ Stopping rule: \
+   Stopping criterion: classification based on 95% confidence interval \
+    Classification threshold: 2 \
+\
+ Randomesque method: \
+   Number of 'randomesque' starting items: 1\
+   Number of 'randomesque' test items: 1\
+\
+ Content balancing control: \
+   No control for content balancing \
+\
+ Adaptive test details: \
+                                                                                                                                   \
+Nr        1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21\
+Item     66    71    87    47    22    63    92     8    94     4    61    70    83    31    19    85     7    73     9    48    15\
+Resp.     1     1     0     1     1     1     0     1     1     1     0     0     1     1     0     0     1     0     1     1     0\
+Est.  0.951 1.458 0.989 1.189  1.43 1.604  1.35  1.49 1.608 1.799 1.691 1.585   1.7 1.816 1.611  1.43 1.487 1.338 1.396 1.457 1.365\
+SE    1.602 1.314  0.89 0.813 0.783 0.765 0.656 0.642 0.631 0.638 0.588  0.55 0.543 0.539 0.498 0.468 0.461 0.438 0.432 0.428 0.412\
+                                               \
+Nr       22    23    24    25    26    27    28\
+Item     33    51    40    18    25    78    79\
+Resp.     1     1     1     1     0     0     0\
+Est.  1.409 1.451 1.503 1.556 1.454 1.283  1.16\
+SE    0.408 0.404 0.401 0.398 0.384 0.367 0.355\
+\
+\
+ Satisfied stopping rule: \
+   Classification based on 95% confidence interval \
+ \
+ Final results: \
+   Length of adaptive test: 28 items \
+   Final ability estimator: Bayes modal (MAP) estimator \
+   Final prior distribution: N(0,1) prior \
+   Final standard error: asymptotic SE (ASE) \
+   Type of ASE formula: classic formula \
+   Final ability estimate (SE): 1.048 (0.33)\
+   95% confidence interval: [0.4,1.695] \
+   Final subject classification: ability is smaller than 2 \
+\
+ Output was not captured! \
+> # Plotting results\
+> plot(res)\
+The plot was not captured!\
+> plot(res, ci = TRUE)\
+The plot was not captured!\
+> plot(res, ci = TRUE, trueTh = FALSE)\
+The plot was not captured!\
+> plot(res, ci = TRUE, classThr = 2)\
+The plot was not captured!}
